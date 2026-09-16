@@ -1,0 +1,33 @@
+{
+  "name": "facebook-pages-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for managing Facebook Pages organic content via Meta Graph API. Connect to Grok, Claude, or any MCP client.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "facebook-pages-mcp-server": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx watch src/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": ["mcp", "facebook", "pages", "graph-api", "meta", "social-media"],
+  "author": "SAW72",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "express": "^4.21.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
